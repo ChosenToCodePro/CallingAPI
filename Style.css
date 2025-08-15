@@ -1,0 +1,96 @@
+body {
+    background-color: white;
+    color: black;
+    font-family: Poppins, sans-serif;
+}
+
+h1 {
+    text-align: center;
+    font-size: 70px;
+}
+
+@media (prefers-color-scheme: dark) {
+    body {
+        background-color: #121212;
+        color: white;
+    }
+    .card {
+        background-color: #333333;
+        border-color: #333;
+        color: white;
+    }
+    .pp {
+        border-color: #555;
+    }
+    .generate{
+        background-color: dodgerblue;
+        color: white;
+    }
+    .skeleton-text{
+        color: black;
+    }
+}
+
+#userinfo {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    justify-content: center;
+    padding: 20px;
+    text-align: start;
+}
+
+.card {
+    border: 1px solid #ccc;
+    padding: 70px;
+    border-radius: 15px;
+    width: 400px;
+    height: 230px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    gap: 15px;
+}
+
+.pp {
+    border-radius: 10%;
+    width: 100px;
+    height: 100px;
+    margin-bottom: 10px;
+    object-fit: cover;
+    border: 2px solid #ddd;
+}
+
+#generator{
+    font-family: Poppins, sans-serif;
+    display: block;
+    margin: 20px auto;
+    gap: 15px;
+    padding: 20px;
+    font-size: 20px;
+    background-color: dodgerblue;
+    border-radius: 10px;
+}
+
+.skeleton {
+    background: linear-gradient(90deg, #e0e0e0 25%, #f0f0f0 50%, #e0e0e0 75%);
+    background-size: 150% 100%;
+    animation: skeleton-loading 1.5s infinite;
+    border-radius: 5px;
+}
+
+.skeleton-text {
+    height: 30px;
+    margin: 10px auto;
+    text-align: center;
+}
+
+.skeleton-pic {
+    border-radius: 10%;
+    width: 100px;
+    height: 100px;
+    margin: 1px auto;
+}
+
+@keyframes skeleton-loading {
+    0% { background-position: 200% 0; }
+    100% { background-position: -200% 0; }
+}
